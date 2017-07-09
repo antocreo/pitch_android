@@ -5,6 +5,7 @@
 <rightButton>m</rightButton>
 <playButton>p</playButton>
 <playAgainButton>.</playAgainButton>
+<increasingDifficulty>0</increasingDifficulty> <!-- can be 1 or 0 -->
 </settings>
 
 <!-- <![CDATA[ ]]> -->
