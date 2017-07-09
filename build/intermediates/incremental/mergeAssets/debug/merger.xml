@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="unspecified"><source path="/Applications/of_v0.9.8_android_release/apps/myApps/pitch/build/intermediates/exploded-aar/pitch/ofAndroidLib/unspecified/assets"/></dataSet><dataSet config="main"><source path="/Applications/of_v0.9.8_android_release/apps/myApps/pitch/assets"/></dataSet><dataSet config="debug"><source path="/Applications/of_v0.9.8_android_release/apps/myApps/pitch/src/debug/assets"/></dataSet></merger>

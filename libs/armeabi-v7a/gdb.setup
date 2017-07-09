@@ -1,0 +1,7 @@
+set solib-search-path /Applications/of_v0.9.8_android_release/apps/myApps/pitch/obj/local/armeabi-v7a:/Applications/of_v0.9.8_android_release/apps/myApps/pitch/libs/armeabi-v7a
+set sysroot /Users/LIB/Library/Android/sdk/ndk-bundle/platforms/android-19/arch-x86/
+directory /Users/LIB/Library/Android/sdk/ndk-bundle/platforms/android-19/arch-arm/usr/include
+directory /Applications/of_v0.9.8_android_release/apps/myApps/pitch/src
+directory /Users/LIB/Library/Android/sdk/ndk-bundle/sources/cxx-stl/system
+directory /Applications/of_v0.9.8_android_release/apps/myApps/pitch/libs/armeabi-v7a
+
