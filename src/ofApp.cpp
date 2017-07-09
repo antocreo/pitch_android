@@ -5,8 +5,7 @@ void ofApp::setup() {
     
     ofSetCircleResolution(60);
     ofBackground(0);
-    
-    
+
     //loading buttons
     leftButt.loadFont("ArialBold.ttf", 20);
     rightButt.loadFont("ArialBold.ttf", 20);
@@ -27,11 +26,12 @@ void ofApp::setup() {
     for (int i = 0; i <(int) dir.size(); i++) {
         
         player.push_back(*new ofSoundPlayer);
-        player[i].load(dir.getPath(i));
+        player[i].load(dir.getPath(i), true);
+
     }
     
     
-    bDebug = false;
+    bDebug = true;
     bGameover = false;
     bWin = false;
     bPlaySeq = false;
@@ -57,7 +57,6 @@ void ofApp::setup() {
 
 //--------------------------------------------------------------
 void ofApp::update() {
-    
     
     //PLAY BUTTON
     //check the button is toggled and that the players and the sequence is filled
@@ -96,19 +95,19 @@ void ofApp::update() {
         rightButt.setButtColor(150, 30, 10, 100);
         playAgain.setButtColor(150, 30, 10, 100);
     }
-    
+
     //WIN OR LOSE
     //let's check if the sequence is the same
     //checking the size
     if (pressedSequence.size() > 0 && pressedSequence.size() == realSequence.size()) {
-        
+
         bGameover = true;
-        
+
         //compare the 2 vectors
         if (pressedSequence == realSequence) {
-            
+
             bWin = true;
-            
+
         } else !bWin;
     }
 }
@@ -116,7 +115,7 @@ void ofApp::update() {
 //--------------------------------------------------------------
 void ofApp::draw() {
 
-    
+
     float playX = ofGetWidth()/2 - ofGetWidth()/8;
     float playY = ofGetHeight()/4;
     float playW = ofGetWidth()/4;
@@ -422,7 +421,6 @@ void ofApp::emptySequence(){
         bGameover = false;
         bWin = false;
         playAgainCounter = 0;
-        
         
     }
     
